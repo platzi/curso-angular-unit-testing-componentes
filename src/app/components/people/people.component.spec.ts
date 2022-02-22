@@ -39,4 +39,26 @@ fdescribe('PeopleComponent', () => {
     // Assert
     expect(debugElement.length).toEqual(3);
   });
+
+  it('should raise seleted event when clicked', () => {
+    // Arrange
+    const buttonDe = fixture.debugElement.query(By.css('app-person .btn-choose'));
+    // Act
+    buttonDe.triggerEventHandler('click', null);
+    fixture.detectChanges();
+    // Assert
+    expect(component.selectedPerson).toEqual(component.people[0]);
+  });
+
+  it('should render the selectedPerson', () => {
+    // Arrange
+    const buttonDe = fixture.debugElement.query(By.css('app-person .btn-choose'));
+    // Act
+    buttonDe.triggerEventHandler('click', null);
+    fixture.detectChanges();
+    const liDe = fixture.debugElement.query(By.css('.selectedPerson ul > li'));
+    // Assert
+    expect(component.selectedPerson).toEqual(component.people[0]);
+    expect(liDe.nativeElement.textContent).toContain(component.selectedPerson?.name);
+  });
 });
