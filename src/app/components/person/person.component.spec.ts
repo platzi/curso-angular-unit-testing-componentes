@@ -5,7 +5,7 @@ import { Person } from 'src/app/models/person.model';
 
 import { PersonComponent } from './person.component';
 
-fdescribe('PersonComponent', () => {
+describe('PersonComponent', () => {
   let component: PersonComponent;
   let fixture: ComponentFixture<PersonComponent>;
 
@@ -113,7 +113,7 @@ class HostComponent {
 }
 
 
-fdescribe('PersonComponent from HostComponent', () => {
+describe('PersonComponent from HostComponent', () => {
 
   let component: HostComponent;
   let fixture: ComponentFixture<HostComponent>;
