@@ -5,7 +5,7 @@ import { Directive, ElementRef, Input, OnChanges, SimpleChanges } from '@angular
 })
 export class HighligthDirective implements OnChanges {
 
-  defaultColor = 'gray';
+  defaultColor = 'pink';
   @Input('highligth') bgColor = '';
 
   constructor(
