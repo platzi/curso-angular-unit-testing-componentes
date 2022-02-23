@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ReservePipe } from './reserve.pipe';
 
-fdescribe('ReservePipe', () => {
+describe('ReservePipe', () => {
   it('create an instance', () => {
     const pipe = new ReservePipe();
     expect(pipe).toBeTruthy();
@@ -36,7 +36,7 @@ class HostComponent {
   text = '';
 }
 
-fdescribe('ReservePipe from HostComponent', () => {
+describe('ReservePipe from HostComponent', () => {
 
   let component: HostComponent;
   let fixture: ComponentFixture<HostComponent>;
