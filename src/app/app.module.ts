@@ -13,6 +13,7 @@ import { PeopleComponent } from './components/people/people.component';
 import { ProductComponent } from './components/product/product.component';
 import { OthersComponent } from './components/others/others.component';
 import { HighligthDirective } from './directives/highligth.directive';
+import { ReservePipe } from './pipes/reserve.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HighligthDirective } from './directives/highligth.directive';
     PeopleComponent,
     ProductComponent,
     OthersComponent,
-    HighligthDirective
+    HighligthDirective,
+    ReservePipe
   ],
   imports: [
     BrowserModule,

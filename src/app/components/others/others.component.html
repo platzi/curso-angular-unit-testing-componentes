@@ -3,4 +3,8 @@
   <h5 highligth>default</h5>
   <h5 highligth="yellow">yellow</h5>
   <input [(ngModel)]="color" [highligth]="color">
+  <h3>Pipe</h3>
+  <p>{{ 'my texto' | reserve }}</p>
+  <input [(ngModel)]="text">
+  <p>{{ text | reserve }}</p>
 </section>

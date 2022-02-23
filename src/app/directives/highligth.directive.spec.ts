@@ -18,7 +18,7 @@ class HostComponent {
   color = 'pink';
 }
 
-fdescribe('HighligthDirective', () => {
+describe('HighligthDirective', () => {
 
   let component: HostComponent;
   let fixture: ComponentFixture<HostComponent>;
